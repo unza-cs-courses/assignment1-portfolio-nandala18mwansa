@@ -1,3 +1,6 @@
+/* ============================================================
+CSS CUSTOM PROPERTIES (VARIABLES)
+============================================================ */
 :root {
   --primary-color: #3498db;
   --secondary-color: #2c3e50;
@@ -5,39 +8,62 @@
   --bg-color: #fff;
   --spacing-unit: 1rem;
   --border-radius: 8px;
+  --font-family: Arial, sans-serif;
 }
 
+/* ============================================================
+BASE STYLES
+============================================================ */
 body {
+  font-family: var(--font-family);
   color: var(--text-color);
   background-color: var(--bg-color);
-  font-family: Arial, sans-serif;
+  margin: var(--spacing-unit);
 }
 
-.hero {
-  background-color: var(--secondary-color);
-  padding: calc(var(--spacing-unit) * 4);
+h1 {
+  font-size: var(--font-size-3xl);
 }
 
-.btn--primary {
-  background-color: var(--primary-color);
-  border-radius: var(--border-radius);
-  padding: calc(var(--spacing-unit) * 0.75) calc(var(--spacing-unit) * 1.5);
+/* ============================================================
+UTILITY CLASSES
+============================================================ */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-unit);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
 }
 
-.project-card {
-  border-radius: var(--border-radius);
-  margin-bottom: var(--spacing-unit);
-}
-
+/* ============================================================
+PROJECTS SECTION
+============================================================ */
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--spacing-unit);
-  margin-top: var(--spacing-unit);
 }
 
 .project-card {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  height: 100%;
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-unit);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================
+RESPONSIVE BREAKPOINTS
+============================================================ */
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
