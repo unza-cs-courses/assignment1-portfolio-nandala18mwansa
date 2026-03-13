@@ -34,22 +34,22 @@ DO NOT use CSS frameworks (Bootstrap, Tailwind, etc.)
     --main-color: #3498db;
     /* Typography - TODO: Define your font sizes */
     --font-family: Arial, sans-serif;
-    --font-size-base: 16px;
-    --font-size-sm: 14px;
-    --font-size-lg: 18px;
-    --font-size-xl: 20px;
-    --font-size-2xl: 24px;
-    --font-size-3xl: 28px;
+    --font-size-base: 16 px;
+    --font-size-sm: 14 px;
+    --font-size-lg: 18 px;
+    --font-size-xl: 20 px;
+    --font-size-2xl: 24 px;
+    --font-size-3xl: 28 px;
     /* Spacing - TODO: Define spacing scale */
-    --spacing-xs: 0.25rem;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 1.5rem;
-    --spacing-xl: 2rem;
-    --max-width: 1200px;
-    --border-radius: 4px;
-    --transition-fast: 0.2s;
-    --transition-normal: 0.4s;
+    --spacing-xs: 0.25 rem;
+    --spacing-sm: 0.5 rem;
+    --spacing-md: 1 rem;
+    --spacing-lg: 1.5 rem;
+    --spacing-xl: 2 rem;
+    --max-width: 1200 px;
+    --border-radius: 4 px;
+    --transition-fast: 0.2 s;
+    --transition-normal: 0.4 s;
     --bg: #fff;
     --text: #000;
 }
