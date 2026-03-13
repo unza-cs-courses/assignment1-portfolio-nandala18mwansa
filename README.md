@@ -127,9 +127,9 @@ Before submitting, verify:
 
 ## Your Information
 
-**Name:** [Your Name]
-**Student ID:** [Your Student ID]
-**Design Theme:** [Describe your portfolio theme/style]
+**Name:** [Mwansa Nandala]
+**Student ID:** [2022074041]
+**Design Theme:** [Responsive Portfolio with clean morden design]
 
 ### CSS Techniques Used
 - [ ] CSS Custom Properties
@@ -139,10 +139,28 @@ Before submitting, verify:
 - [ ] Other: _______________
 
 ### Challenges & Solutions
-[Describe any challenges you faced and how you solved them]
+1. Responsive Navigation (Hamburger Menu):
+    - Challenge: Making nav menu responsive on mobile.
+    - Solution: Used Flexbox for nav layout, added media query for mobile toggle.
+
+2. CSS Grid for Project Cards:
+    - Challenge: Getting project cards to display properly on different screens.
+    - Solution: Used CSS Grid with grid-template-columns and media queries.
+
+3. Form Validation:
+    - Challenge: Ensuring form inputs validate correctly.
+    - Solution: Used HTML5 validation attributes (required, type="email").
+
+4. Customizing CSS Variables:
+    - Challenge: Figuring out color scheme and spacing variables.
+    - Solution: Defined variables in :root and adjusted as needed
+
+5. - Challenge: Wanted to link "Live Demo" buttons to actual projects on GitHub, but didn't have projects to link.
+- Solution: Used placeholder links for now. Will update with real projects later.
 
 ### Credits
 [List any images, fonts, or resources used with attribution]
+Project images sourced from Pexels  (used for portfolio purposes)
 
 ---
 

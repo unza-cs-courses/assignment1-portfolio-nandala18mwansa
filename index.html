@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <title>Portfolio - Mwansa Nandala</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <!--
-    ============================================================
-    ASSIGNMENT 1: RESPONSIVE PORTFOLIO WEBSITE
-    CSC4035 Web Programming and Technologies
 
-    Instructions:
-    1. Complete all TODO sections below
-    2. Use semantic HTML5 elements
-    3. Ensure all images have alt attributes
-    4. Ensure all form inputs have labels
-    5. Test responsiveness at multiple breakpoints
-    ============================================================
-    -->
+<body>
+
 
     <!-- Navigation -->
     <header class="header">
@@ -32,14 +22,19 @@
                  - Mobile-friendly (hamburger menu optional)
                  - Active state indication
             -->
+
             <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
+                <a href="#home">Mwansa Nandala</a>
             </div>
+            <button class="nav__toggle" aria-label="Toggle navigation menu">
+                &#9776;
+            </button>
             <ul class="nav__menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">Toggle Theme</button></li>
             </ul>
         </nav>
     </header>
@@ -55,7 +50,7 @@
                  - Consider using Flexbox for layout
             -->
             <div class="hero__content">
-                <h1>Your Name</h1>
+                <h1>Mwansa Nandala</h1>
                 <p class="hero__tagline">
                     <!-- TODO: Add your professional tagline -->
                     Web Developer | Designer | Problem Solver
@@ -79,7 +74,7 @@
                 <div class="about__content">
                     <div class="about__image">
                         <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
+                        <img src="Profile Image Mwansa Nandala.jpg" alt="Profile photo of Mwansa Nandala">
                     </div>
                     <div class="about__text">
                         <p>
@@ -90,9 +85,10 @@
                                  - Your goals
                                  - What makes you unique
                             -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
+                            Hi, I'm Mwansa Nandala, a web developer with a passion for building responsive and user-friendly websites. I'm from Zambia and I've been fascinated with technology since I was young. I've worked on various projects, from simple blogs to complex web applications,
+                            and I'm excited to share my skills and experience with you. As a web developer, I'm passionate about creating websites that are not only visually appealing but also functional and accessible. I enjoy learning new technologies
+                            and solving problems. My goal is to build websites that make a positive impact on people's lives. When I'm not coding, I like to learn new things, explore new places, and meet new people. I'm excited to collaborate with clients
+                            and teams to bring their ideas to life.
                         </p>
                         <h3>Skills</h3>
                         <ul class="skills-list">
@@ -101,6 +97,10 @@
                             <li>CSS3</li>
                             <li>JavaScript</li>
                             <li>Responsive Design</li>
+                            <li>UI/UX</li>
+                            <li>Node.js</li>
+                            <li>React</li>
+                            <li>Web Design</li>
                             <!-- Add more skills -->
                         </ul>
                     </div>
@@ -123,12 +123,11 @@
                     <!-- Project Card 1 -->
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
-                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
+                        <img src="project 1.jpg" alt="Screenshot of Project 1">
                         <div class="project-card__content">
-                            <h3>Project Title 1</h3>
+                            <h3>Portfolio Website</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A responsive portfolio website showcasing my web development skills and projects. I used HTML, CSS, and JavaScript. It solves the problem of showcasing my work to potential clients/employers.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -140,12 +139,11 @@
                     <!-- Project Card 2 -->
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
+                        <img src="project 2.jpg" alt="Screenshot of Project 2">
                         <div class="project-card__content">
-                            <h3>Project Title 2</h3>
+                            <h3>E-commerce Landing</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A landing page for an e-commerce site, featuring product showcases and calls-to-action. I used HTML, CSS, and JavaScript. It solves the problem of promoting products and driving sales.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -157,12 +155,12 @@
                     <!-- Project Card 3 -->
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
+                        <img src="project 3.jpg" alt="Screenshot of Project 3">
                         <div class="project-card__content">
-                            <h3>Project Title 3</h3>
+                            <h3>Weather App</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A simple weather app fetching data from an API, showing current weather and forecasts. I used HTML, CSS, JavaScript, and a weather API. It solves the problem of quickly checking weather conditions.
+
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -194,44 +192,19 @@
                 <form class="contact__form" action="#" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                            placeholder="Your Name"
-                            minlength="2"
-                        >
+                        <input type="text" id="name" name="name" required placeholder="Your Name" minlength="2">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                            placeholder="your.email@example.com"
-                        >
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            placeholder="What is this regarding?"
-                        >
+                        <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            required
-                            rows="5"
-                            placeholder="Your message..."
-                            minlength="10"
-                        ></textarea>
+                        <textarea id="message" name="message" required rows="5" placeholder="Your message..." minlength="10"></textarea>
                     </div>
                     <button type="submit" class="btn btn--primary">Send Message</button>
                 </form>
@@ -248,7 +221,7 @@
              - Back to top link (optional)
         -->
         <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2025 [Mwansa Nandala]. All rights reserved.</p>
             <nav class="footer__social">
                 <!-- TODO: Add your social media links -->
                 <a href="#" aria-label="GitHub">GitHub</a>
@@ -258,4 +231,5 @@
         </div>
     </footer>
 </body>
+
 </html>
