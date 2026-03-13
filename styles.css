@@ -1,68 +1,43 @@
-/* ============================================================
-CSS CUSTOM PROPERTIES (VARIABLES)
-============================================================ */
 :root {
   --primary-color: #3498db;
   --secondary-color: #2c3e50;
-  --spacing: 1rem;
+  --text-color: #333;
+  --bg-color: #fff;
+  --spacing-unit: 1rem;
   --border-radius: 8px;
-  --font-family: Arial, sans-serif;
 }
 
-/* ============================================================
-BASE STYLES
-============================================================ */
 body {
-  font-family: var(--font-family);
-font-size: var(--font-size-base);
-color: var(--primary-color);
-background-color: var(--secondary-color);
-margin: var(--spacing);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: Arial, sans-serif;
 }
 
-h1 {
-  font-size: var(--font-size-3xl);
+.hero {
+  background-color: var(--secondary-color);
+  padding: calc(var(--spacing-unit) * 4);
 }
 
-/* ============================================================
-UTILITY CLASSES
-============================================================ */
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--spacing);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing);
-}
-
-/* ============================================================
-PROJECTS SECTION
-============================================================ */
-.projects__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing);
+.btn--primary {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: calc(var(--spacing-unit) * 0.75) calc(var(--spacing-unit) * 1.5);
 }
 
 .project-card {
-  background-color: #fff;
   border-radius: var(--border-radius);
-  padding: var(--spacing);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: var(--spacing-unit);
 }
 
-/* ============================================================
-RESPONSIVE BREAKPOINTS
-============================================================ */
-@media (min-width: 768px) {
-  .container {
-    grid-template-columns: 1fr 1fr;
-  }
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-unit);
+  margin-top: var(--spacing-unit);
 }
 
-@media (min-width: 1024px) {
-  .container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+.project-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
 }
